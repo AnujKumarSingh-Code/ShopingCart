@@ -120,6 +120,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For any questions or feedback, please reach out to [anujkumarcoder@gmail.com](mailto:anujkumarcoder@gmail.com).
 
----
 
-Feel free to customize this README to fit your needs and include any additional details about your project.
