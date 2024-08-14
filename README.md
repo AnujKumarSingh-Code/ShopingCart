@@ -1,6 +1,6 @@
-Certainly! Here’s a sample README for your Shopping Cart application:
 
----
+
+
 
 # Shopping Cart Application
 
