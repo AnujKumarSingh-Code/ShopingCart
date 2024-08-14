@@ -4,7 +4,7 @@
 
 # Shopping Cart Application
 
-Welcome to the Shopping Cart Application! This project is a modern e-commerce platform built using Next.js, React, and Tailwind CSS. It provides a fully functional shopping cart with a responsive design and seamless user experience.
+Welcome to the Shopping Cart Application! This project is a modern e-commerce platform built using Next.js, React, and Tailwind CSS. It provides a fully functional shopping cart with a responsive design and seamless user experience. This was my assesment task for frontend internship.
 
 ## Features
 
@@ -112,9 +112,7 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 3. Commit your changes and push to your fork.
 4. Open a pull request.
 
-## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
