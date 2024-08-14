@@ -33,8 +33,8 @@ const Home = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://ipinfo.io/widget"></script>
+      {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      // <script src="https://ipinfo.io/widget"></script> */}
 
       <nav className="mb-4 flex justify-between">
         <Link href="/cart">
