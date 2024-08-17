@@ -1,4 +1,3 @@
-
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
@@ -25,6 +24,49 @@ class MyDocument extends Document {
             }}
           />
           {/* End Google Tag Manager */}
+
+          {/* Google Analytics 4 Script */}
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=YOUR_GA4_MEASUREMENT_ID`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'YOUR_GA4_MEASUREMENT_ID');
+              `,
+            }}
+          />
+          {/* End Google Analytics 4 Script */}
+
+          {/* Inline script to track all link clicks */}
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                function trackLinkClick(event) {
+                  const link = event.target;
+                  const linkUrl = link.href;
+                  const userId = 'user123'; // Replace with dynamic user ID if available
+
+                  gtag('event', 'click', {
+                    'event_category': 'Link Click',
+                    'event_label': linkUrl,
+                    'user_id': userId
+                  });
+                }
+
+                document.addEventListener('DOMContentLoaded', () => {
+                  const links = document.querySelectorAll('a');
+                  links.forEach(link => {
+                    link.addEventListener('click', trackLinkClick);
+                  });
+                });
+              `,
+            }}
+          />
         </Head>
         <body>
           <noscript
