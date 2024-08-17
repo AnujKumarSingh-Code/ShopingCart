@@ -79,7 +79,7 @@ class MyDocument extends Document {
           <script
             defer
             data-domain="shoping-cart-xort.vercel.app"
-            src="https://plausible.io/js/script.js"
+            src="https://plausible.io/js/script.outbound-links.js"
           ></script>
           {/* End Plausible Analytics Script */}
           
