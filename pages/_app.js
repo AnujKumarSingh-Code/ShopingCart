@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-// pages/_app.js
+
 import '../styles/globals.css';
 import { CartProvider } from '../contexts/CartContext';
 import Script from 'next/script';
@@ -16,7 +15,7 @@ function MyApp({ Component, pageProps }) {
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-M8P49DBX');`,
+          })(window,document,'script','dataLayer','GTM-MZKB5SXK');`,
         }}
       />
       {/* CartProvider context */}
@@ -24,7 +23,7 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </CartProvider>
     </>
-=======
+
 import '../styles/globals.css';
 import { CartProvider } from '../contexts/CartContext';
 
@@ -33,7 +32,7 @@ function MyApp({ Component, pageProps }) {
     <CartProvider>
       <Component {...pageProps} />
     </CartProvider>
->>>>>>> 8f7df91548c3d6b47c48f36f004a605eb8db7d89
+
   );
 }
 
