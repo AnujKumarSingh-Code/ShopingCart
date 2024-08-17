@@ -37,6 +37,12 @@ class MyDocument extends Document {
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
                 gtag('config', 'YOUR_GA4_MEASUREMENT_ID');
+                
+                // Set user property (e.g., user ID)
+                const userId = 'user123'; // Replace with dynamic user ID if available
+                gtag('set', 'user_properties', {
+                  'user_id': userId
+                });
               `,
             }}
           />
