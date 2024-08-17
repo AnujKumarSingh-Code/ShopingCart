@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // pages/_app.js
 import '../styles/globals.css';
 import { CartProvider } from '../contexts/CartContext';
@@ -23,6 +24,16 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </CartProvider>
     </>
+=======
+import '../styles/globals.css';
+import { CartProvider } from '../contexts/CartContext';
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <CartProvider>
+      <Component {...pageProps} />
+    </CartProvider>
+>>>>>>> 8f7df91548c3d6b47c48f36f004a605eb8db7d89
   );
 }
 
