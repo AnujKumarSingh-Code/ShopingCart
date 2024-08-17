@@ -28,7 +28,7 @@ class MyDocument extends Document {
           {/* Google Analytics 4 Script */}
           <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=YOUR_GA4_MEASUREMENT_ID`}
+            src={`https://www.googletagmanager.com/gtag/js?id=GTM-M8P49DBX`}
           />
           <script
             dangerouslySetInnerHTML={{
@@ -36,7 +36,7 @@ class MyDocument extends Document {
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', 'YOUR_GA4_MEASUREMENT_ID');
+                gtag('config', 'GTM-M8P49DBX');
                 
                 // Set user property (e.g., user ID)
                 const userId = 'user123'; // Replace with dynamic user ID if available
@@ -73,6 +73,16 @@ class MyDocument extends Document {
               `,
             }}
           />
+          {/* End Inline Script to Track Link Clicks */}
+
+          {/* Plausible Analytics Script */}
+          <script
+            defer
+            data-domain="shoping-cart-xort.vercel.app"
+            src="https://plausible.io/js/script.js"
+          ></script>
+          {/* End Plausible Analytics Script */}
+          
         </Head>
         <body>
           <noscript
