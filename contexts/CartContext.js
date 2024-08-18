@@ -38,28 +38,28 @@ export const CartProvider = ({ children }) => {
   };
 
 
-  const [user, setUser] = useState(null); // User state for authentication
+  const [user, setUser] = useState(null); 
 
   useEffect(() => {
     const storedCart = JSON.parse(localStorage.getItem('cart')) || [];
-    const storedUser = JSON.parse(localStorage.getItem('user')); // Retrieve user info from localStorage
+    const storedUser = JSON.parse(localStorage.getItem('user')); 
     setCart(storedCart);
-    setUser(storedUser); // Set user from localStorage
+    setUser(storedUser); 
   }, []);
 
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cart));
-    localStorage.setItem('user', JSON.stringify(user)); // Store user info in localStorage
+    localStorage.setItem('user', JSON.stringify(user)); 
   }, [cart, user]);
 
   const login = (userData) => {
     setUser(userData);
-    localStorage.setItem('user', JSON.stringify(userData)); // Store user data
+    localStorage.setItem('user', JSON.stringify(userData)); 
   };
 
   const logout = () => {
     setUser(null);
-    localStorage.removeItem('user'); // Remove user data
+    localStorage.removeItem('user'); 
   };
 
   const getTotalPrice = () => {
