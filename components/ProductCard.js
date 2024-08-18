@@ -3,11 +3,11 @@ import Image from 'next/image';
 export default function ProductCard({ product, addToCart }) {
   return (
     <div className="border p-4 rounded hover:shadow-lg transition-shadow">
-      <Image
+      <img
         src={product.image}
         alt={product.name}
-        width={500}  // Set appropriate width
-        height={200} // Set appropriate height
+        width={500}  
+        height={200} 
         className="object-cover mb-4"
       />
       <h2 className="text-lg font-bold">{product.name}</h2>
